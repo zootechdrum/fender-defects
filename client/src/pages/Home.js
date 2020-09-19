@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero";
 import { DropdownButton, Dropdown } from "react-bootstrap";
+import TableComp from "../components/Table";
 import Container from "../components/Container";
 import "./Home.css";
 
@@ -23,6 +24,9 @@ function Home() {
             <Dropdown.Item href="#/action-3">Nut</Dropdown.Item>
             <Dropdown.Item href="#/action-3">Acoustic</Dropdown.Item>
           </DropdownButton>
+        </div>
+        <div className="mt-5">
+          <TableComp />
         </div>
       </Container>
     </div>

@@ -27,31 +27,49 @@ function Home() {
   }
 
   const handleChange = (e) => {
+
+
+    setFilterComponent([]);
     setsearchField(e.target.value);
   };
 
   const handleSelect = (e) => {
+    console.log(e)
+    if (e === "Reset"){
+      return setFilterComponent([])
+    }
     setFilterComponent(e);
+    setsearchField([]);
+    filteredCodes = [];
   };
 
-  const filteredCodes = defects.filter((defect) =>
-    defect.component.includes(searchField)
+  let filteredCodes = defects.filter((defect) =>
+    defect.errorCode.toString().includes(searchField)
   );
-  console.log(filterComponent);
 
+  const filteredComponents = defects.filter((defect) =>
+    defect.component.includes(filterComponent)
+  );
   return (
     <div>
-      <Hero>
-        <img src={FenderLogo} alt="Fender Logo" />
-      </Hero>
-      <Search change={handleChange} />
+      <div className="text-center">
+        <Hero>
+          <img src={FenderLogo} alt="Fender Logo" />
+        </Hero>
+        <Search change={handleChange} />
+      </div>
       <Container style={{ marginTop: 50 }}>
         <div className="text-center">
           <DropdownButton
             id="dropdown-button"
-            title={filterComponent.length === 0 ? "Choose Component" : filterComponent}
+            title={
+              filterComponent.length === 0
+                ? "Choose Component"
+                : filterComponent
+            }
             onSelect={handleSelect}
           >
+            <Dropdown.Item eventKey="Reset">Reset</Dropdown.Item>
             <Dropdown.Item eventKey="Electronics">Electronics</Dropdown.Item>
             <Dropdown.Item eventKey="Finish">Finish</Dropdown.Item>
             <Dropdown.Item eventKey="Body">Body</Dropdown.Item>
@@ -62,7 +80,13 @@ function Home() {
           </DropdownButton>
         </div>
         <div className="mt-5">
-          <TableComp defects={filteredCodes} />
+          <TableComp
+            defects={
+              filteredCodes.length !== defects.length
+                ? filteredCodes
+                : filteredComponents
+            }
+          />
         </div>
       </Container>
     </div>

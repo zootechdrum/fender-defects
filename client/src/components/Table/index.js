@@ -5,7 +5,6 @@ import youTubeImg from "../../images/youtube.png";
 import blogImg from "../../images/title.png";
 
 function TableComp(props) {
-  console.log(props.defects);
   return (
     <Table responsive striped bordered hover variant="dark">
       <thead>
@@ -21,23 +20,25 @@ function TableComp(props) {
       </thead>
       <tbody>
         {props.defects.map((defect) => (
-          <tr>
+          <tr key={props.defects.id}>
             <td>{defect.errorCode}</td>
             <td>{defect.title}</td>
             <td>{defect.description}</td>
             <td>{defect.component}</td>
 
             <td>
-              <a href={defect.media.videoUrl}>
-                <img
-                  className="tableIcon"
-                  src={youTubeImg}
-                  alt="Youtube Icon"
-                />
-              </a>
-              <a href={defect.media.blogUrl}>
-                <img className="tableIcon" src={blogImg} alt="Youtube Icon" />
-              </a>
+            <div className="d-flex align-items-center justify-content-around align-items-center">
+                <a href={defect.media.videoUrl}>
+                  <img
+                    className="tableIcon"
+                    src={youTubeImg}
+                    alt="Youtube Icon"
+                  />
+                </a>
+                <a href={defect.media.blogUrl}>
+                  <img className="tableIcon" src={blogImg} alt="Youtube Icon" />
+                </a>
+              </div>
             </td>
           </tr>
         ))}

@@ -9,7 +9,9 @@
   font-size: 18px;
 }
 .searchBox {
+  margin-left: 35%;
   position: relative;
+  display: inline-block;
 }
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -19,7 +21,7 @@
 
 .close-btn {
   top: 2px;
-  left: 778px;
+  left: 279px;
   position: absolute;
   cursor: pointer;
   color: #ffffff;

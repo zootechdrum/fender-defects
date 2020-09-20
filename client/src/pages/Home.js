@@ -1,15 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Hero from "../components/Hero";
 import { DropdownButton, Dropdown } from "react-bootstrap";
 import TableComp from "../components/Table";
 import Container from "../components/Container";
 import Search from "../components/SearchBox";
+import API from "./utils/API";
 import "./Home.css";
 
 import FenderLogo from "../images/Fender_logo.png";
 
 function Home() {
-  // const [component, setComponent] = useState([]);
+  const [defects, setDefects] = useState([]);
+
+  useEffect(() => {
+    loadDefects();
+  }, []);
+
+  function loadDefects() {
+    API.getDefects()
+      .then((res) => setDefects(res.data))
+      .catch((err) => console.log(err));
+  }
 
   return (
     <div>
@@ -30,7 +41,7 @@ function Home() {
           </DropdownButton>
         </div>
         <div className="mt-5">
-          <TableComp />
+          <TableComp defects={defects} />
         </div>
       </Container>
     </div>

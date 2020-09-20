@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const errorCode = new Schema({
+const defectCode = new Schema({
   title: { type: String, required: true },
   description: { type: String, required: true },
   media: {
@@ -11,9 +11,9 @@ const errorCode = new Schema({
   date: { type: Date, default: Date.now },
 });
 
-const ErrCodes = mongoose.model("Book", errorCode);
+const Codes = mongoose.model("Defect", defectCode);
 
-module.exports = ErrCodes;
+module.exports = Codes;
 
 // const errorSeed = [
 //     {

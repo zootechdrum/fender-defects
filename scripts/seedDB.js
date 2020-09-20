@@ -20,8 +20,8 @@ const errorSeed = [
   },
 ];
 
-db.ErrCodes.remove({})
-  .then(() => db.ErrCodes.collection.insertMany(errorSeed))
+db.Codes.remove({})
+  .then(() => db.Codes.collection.insertMany(errorSeed))
   .then((data) => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);

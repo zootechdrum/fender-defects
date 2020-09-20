@@ -3,7 +3,7 @@ import "./style.css";
 
 function Search() {
   return (
-    <div class="searchBox mt-5 text-center">
+    <div class="searchBox mt-5">
       <input type="text" class="input" placeholder="Search Error Code" />
       <input type="button" value="search" class="close-btn" />
     </div>

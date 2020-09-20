@@ -1,3 +1,3 @@
 module.exports = {
-    ErrCodes: require("./errorCode"),
+  Codes: require("./errorCode"),
 };

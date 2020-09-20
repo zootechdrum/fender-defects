@@ -11,7 +11,10 @@ import FenderLogo from "../images/Fender_logo.png";
 
 function Home() {
   const [defects, setDefects] = useState([]);
+  //Filters by search
   const [searchField, setsearchField] = useState([]);
+  //Filters by dropdown options
+  const [filterComponent, setFilterComponent] = useState([]);
 
   useEffect(() => {
     loadDefects();
@@ -23,17 +26,18 @@ function Home() {
       .catch((err) => console.log(err));
   }
 
-  function handleChange(e) {
+  const handleChange = (e) => {
     setsearchField(e.target.value);
-  }
+  };
 
   const handleSelect = (e) => {
-    console.log(e);
+    setFilterComponent(e);
   };
 
   const filteredCodes = defects.filter((defect) =>
-    defect.errorCode.toString().includes(searchField)
+    defect.component.includes(searchField)
   );
+  console.log(filterComponent);
 
   return (
     <div>
@@ -45,7 +49,7 @@ function Home() {
         <div className="text-center">
           <DropdownButton
             id="dropdown-button"
-            title="Filter by Component"
+            title={filterComponent.length === 0 ? "Choose Component" : filterComponent}
             onSelect={handleSelect}
           >
             <Dropdown.Item eventKey="Electronics">Electronics</Dropdown.Item>

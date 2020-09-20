@@ -9,6 +9,7 @@ const errorSeed = [
   {
     errorCode: 2000,
     title: "Pickup Out of Phase",
+    component: "Electronics",
     description:
       "When they are out-of-phase, the two pickups work against one another; the resulting sound is simply the “leftovers” from the pickups’ cancellations. The closer the two pickups are, the greater the cancellations, meaning thinner sound and lesser volume.",
     media: {

@@ -5,6 +5,7 @@ import youTubeImg from "../../images/youtube.png";
 import blogImg from "../../images/blogging.png";
 
 function TableComp(props) {
+  console.log(props.defects);
   return (
     <Table responsive striped bordered hover variant="dark">
       <thead>
@@ -19,36 +20,27 @@ function TableComp(props) {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>2000</td>
-          <td>Pickup Out of Phase</td>
-          <td>
-            When they are out-of-phase, the two pickups work against one
-            another; the resulting sound is simply the “leftovers” from the
-            pickups’ cancellations. The closer the two pickups are, the greater
-            the cancellations, meaning thinner sound and lesser volume.
-          </td>
-          <td>Electronics</td>
-          <td className="text-center">
-            <img className="tableIcon" src={youTubeImg} alt="Youtube Icon" />
-            <img className="tableIcon" src={blogImg} alt="Youtube Icon" />
-          </td>
-        </tr>
-        <tr>
-          <td>2000</td>
-          <td>Pickup Out of Phase</td>
-          <td>
-            When they are out-of-phase, the two pickups work against one
-            another; the resulting sound is simply the “leftovers” from the
-            pickups’ cancellations. The closer the two pickups are, the greater
-            the cancellations, meaning thinner sound and lesser volume.
-          </td>
-          <td>Electronics</td>
-          <td className="text-center">
-            <img className="tableIcon" src={youTubeImg} alt="Youtube Icon" />
-            <img className="tableIcon" src={blogImg} alt="Youtube Icon" />
-          </td>
-        </tr>
+        {props.defects.map((defect) => (
+          <tr>
+            <td>{defect.errorCode}</td>
+            <td>{defect.title}</td>
+            <td>{defect.description}</td>
+            <td>{defect.component}</td>
+
+            <td>
+              <a href={defect.media.videoUrl}>
+                <img
+                  className="tableIcon"
+                  src={youTubeImg}
+                  alt="Youtube Icon"
+                />
+              </a>
+              <a href={defect.media.blogUrl}>
+                <img className="tableIcon" src={blogImg} alt="Youtube Icon" />
+              </a>
+            </td>
+          </tr>
+        ))}
       </tbody>
     </Table>
   );

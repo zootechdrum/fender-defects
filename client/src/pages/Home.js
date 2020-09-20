@@ -8,6 +8,8 @@ import "./Home.css";
 import FenderLogo from "../images/Fender_logo.png";
 
 function Home() {
+  const [component, setComponent] = useState([]);
+
   return (
     <div>
       <Hero>

@@ -9,7 +9,7 @@ const errorSeed = [
   {
     errorCode: 2000,
     title: "Pickup Out of Phase",
-    Description:
+    description:
       "When they are out-of-phase, the two pickups work against one another; the resulting sound is simply the “leftovers” from the pickups’ cancellations. The closer the two pickups are, the greater the cancellations, meaning thinner sound and lesser volume.",
     media: {
       videoUrl:
@@ -20,8 +20,8 @@ const errorSeed = [
   },
 ];
 
-db.Defects.remove({})
-  .then(() => db.Post.collection.insertMany(errorSeed))
+db.ErrCodes.remove({})
+  .then(() => db.ErrCodes.collection.insertMany(errorSeed))
   .then((data) => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);

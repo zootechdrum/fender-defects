@@ -3,18 +3,20 @@ import Hero from "../components/Hero";
 import { DropdownButton, Dropdown } from "react-bootstrap";
 import TableComp from "../components/Table";
 import Container from "../components/Container";
+import Search from "../components/SearchBox";
 import "./Home.css";
 
 import FenderLogo from "../images/Fender_logo.png";
 
 function Home() {
-  const [component, setComponent] = useState([]);
+  // const [component, setComponent] = useState([]);
 
   return (
     <div>
       <Hero>
         <img src={FenderLogo} alt="Fender Logo" />
       </Hero>
+      <Search />
       <Container style={{ marginTop: 50 }}>
         <div className="text-center">
           <DropdownButton id="dropdown-button" title="Filter by Component">

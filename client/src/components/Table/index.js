@@ -2,7 +2,7 @@ import React from "react";
 import { Table } from "react-bootstrap";
 import "./style.css";
 import youTubeImg from "../../images/youtube.png";
-import blogImg from "../../images/blogging.png";
+import blogImg from "../../images/title.png";
 
 function TableComp(props) {
   console.log(props.defects);

@@ -7,7 +7,7 @@
 }
 .searchBox {
   text-align: center;
-  width: 100%;
+  width: 1080px;
   position: relative;
 }
 ::-webkit-input-placeholder {
@@ -17,6 +17,7 @@
 }
 
 .close-btn {
+  left:620px;
   top: 2px;
   position: absolute;
   cursor: pointer;
@@ -31,7 +32,7 @@
   font-weight: bold;
 }
 
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
   .close-btn {
     left: 349px;
   }
@@ -49,6 +50,6 @@
 
 @media only screen and (min-width: 1200px) {
   .close-btn {
-    left: 649px;
+    left: 593px;
   }
-}
+} */

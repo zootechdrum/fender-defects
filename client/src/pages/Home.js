@@ -58,7 +58,7 @@ function Home() {
         </Hero>
         <Search change={handleChange} />
       </div>
-      <Container style={{ marginTop: 50 }}>
+      <Container style={{ marginTop: 20 }}>
         <div className="text-center">
           <DropdownButton
             id="dropdown-button"

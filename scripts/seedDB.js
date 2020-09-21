@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 const db = require("../models");
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/defects", {
-  useNewUrlParser: true,
-});
+// mongoose.connect("mongodb+srv://zootechdrum:Deleteurspam951@cluster0.flyis.mongodb.net/DEVNET?retryWrites=true&w=majority", {
+//   useNewUrlParser: true,
+// });
 
 const errorSeed = [
   {

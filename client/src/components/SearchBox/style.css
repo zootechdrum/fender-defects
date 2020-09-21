@@ -6,8 +6,9 @@
   font-size: 18px;
 }
 .searchBox {
-  position: relative;
   text-align: center;
+  width: 100%;
+  position: relative;
 }
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -16,16 +17,38 @@
 }
 
 .close-btn {
-  right: 117px;
-  position: absolutegi;
+  top: 2px;
+  position: absolute;
   cursor: pointer;
   color: #ffffff;
   background: #000000;
   border: 0px;
   width: 120px;
-  height: 55px;
+  height: calc(100% - 4px);
   border-radius: 50px;
   outline: none;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+@media only screen and (min-width: 600px) {
+  .close-btn {
+    left: 349px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .close-btn {
+    left: 439px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .close-btn {
+    left: 559px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .close-btn {
+    left: 649px;
+  }
 }

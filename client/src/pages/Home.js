@@ -8,6 +8,8 @@ import API from "./utils/API";
 import "./Home.css";
 
 import FenderLogo from "../images/Fender_logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowAltCircleUp } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
   const [defects, setDefects] = useState([]);
@@ -27,16 +29,14 @@ function Home() {
   }
 
   const handleChange = (e) => {
-
-
     setFilterComponent([]);
     setsearchField(e.target.value);
   };
 
   const handleSelect = (e) => {
-    console.log(e)
-    if (e === "Reset"){
-      return setFilterComponent([])
+    console.log(e);
+    if (e === "Reset") {
+      return setFilterComponent([]);
     }
     setFilterComponent(e);
     setsearchField([]);
@@ -89,6 +89,7 @@ function Home() {
           />
         </div>
       </Container>
+      <FontAwesomeIcon icon={faArrowAltCircleUp} />
     </div>
   );
 }

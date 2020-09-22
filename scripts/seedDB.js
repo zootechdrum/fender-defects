@@ -2,8 +2,9 @@ const mongoose = require("mongoose");
 const db = require("../models");
 const { electronicDefects } = require("./electronicDefects");
 const { hardwareDefects } = require("./hardwareDefects");
+const { finishDefects } = require("./finishDefects");
 
-let defects = electronicDefects.concat(hardwareDefects);
+let defects = electronicDefects.concat(hardwareDefects).concat(finishDefects);
 
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/fenderDefects"

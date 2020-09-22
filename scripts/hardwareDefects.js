@@ -198,7 +198,7 @@ const hardwareDefects = [
   {
     errorCode: 2195,
     title: "Stripped Screw",
-    component: "2173",
+    component: "Hardware",
     description:
       "Stripped screws are no longer able to hold or fasten components. Also, a worn, damaged or distorted screw head that cannot be turned in the usual manner is also considered stripped.",
     media: {

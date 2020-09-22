@@ -89,7 +89,11 @@ function Home() {
           />
         </div>
       </Container>
-      <FontAwesomeIcon icon={faArrowAltCircleUp} />
+
+      <FontAwesomeIcon
+        class="fixed-btm fontIcon"
+        icon={faArrowAltCircleUp}
+      />
     </div>
   );
 }

@@ -143,11 +143,11 @@ const bodyDefects = [
     },
   },
   {
-    errorCode: ,
-    title: "",
-    component: "",
+    errorCode: 3040,
+    title: "Rosette Issue ",
+    component: "Body",
     description:
-      "",
+      "Rosette issues can be anything involving the rosette including finish issues, sinking, delaminating or separation.",
     media: {
       videoUrl:
         "https://www.youtube.com/watch?time_continue=6&v=xWq3v7DV7Zk&feature=emb_title",
@@ -156,11 +156,11 @@ const bodyDefects = [
     },
   },
   {
-    errorCode: ,
-    title: "",
-    component: "",
+    errorCode: 3050,
+    title: "Inlay Errors",
+    component: "Body",
     description:
-      "",
+      "Inlay errors can be discoloration, crooked, or deformed inlays or incorrect inlays for a specific model.",
     media: {
       videoUrl:
         "https://www.youtube.com/watch?time_continue=6&v=xWq3v7DV7Zk&feature=emb_title",
@@ -169,11 +169,11 @@ const bodyDefects = [
     },
   },
   {
-    errorCode: ,
-    title: "",
-    component: "",
+    errorCode:3060 ,
+    title: "Loose/Missing Bracing",
+    component: "Body",
     description:
-      "",
+      "This is when bracing becomes loose or is missing. Bracing refers to the system of wooden struts which support and reinforce the soundboard and back of the instrument. Note: Sometimes, these become loose and cause a rattling or buzzing sound when played or taped. A missing or loose brace may cause a top to pull up or cause a wavy or lumpy surface.",
     media: {
       videoUrl:
         "https://www.youtube.com/watch?time_continue=6&v=xWq3v7DV7Zk&feature=emb_title",
@@ -182,11 +182,11 @@ const bodyDefects = [
     },
   },
   {
-    errorCode: ,
-    title: "",
-    component: "",
+    errorCode:3070 ,
+    title: "Top Sunken",
+    component: "Body",
     description:
-      "",
+      "This is a top that has dropped down from the lack of proper moister and causes problems with the action and neck pitch. Note: A properly humidified guitar will have a slight amount of arch to the top.",
     media: {
       videoUrl:
         "https://www.youtube.com/watch?time_continue=6&v=xWq3v7DV7Zk&feature=emb_title",
@@ -195,11 +195,11 @@ const bodyDefects = [
     },
   },
   {
-    errorCode: ,
-    title: "",
-    component: "",
+    errorCode:3072 ,
+    title: "Top Swollen",
+    component: "Body",
     description:
-      "",
+      "This is a top that has risen from excessive moisture causing problems with the action and neck pitch. Note: A properly humidified guitar will have a slight amount of arch to the top. This can also occur if the top was built while having low moisture content and becomes puffed up when being reintroduced to correct humidity levels.",
     media: {
       videoUrl:
         "https://www.youtube.com/watch?time_continue=6&v=xWq3v7DV7Zk&feature=emb_title",
@@ -208,11 +208,11 @@ const bodyDefects = [
     },
   },
   {
-    errorCode: ,
-    title: "",
-    component: "",
+    errorCode:3071 ,
+    title: "Top Cracked/Split",
+    component: "Body",
     description:
-      "",
+      " A cracked or split top is a separation of ether a joint or wood grain causing a gap.",
     media: {
       videoUrl:
         "https://www.youtube.com/watch?time_continue=6&v=xWq3v7DV7Zk&feature=emb_title",
@@ -221,11 +221,11 @@ const bodyDefects = [
     },
   },
   {
-    errorCode: ,
-    title: "",
-    component: "",
+    errorCode:3080 ,
+    title: "Body",
+    component: "Bridge Thick/Thin",
     description:
-      "",
+      "A bridge that is too thick or too thin when measured is considered out of specification. Note: It may create action, saddle and structural problems.",
     media: {
       videoUrl:
         "https://www.youtube.com/watch?time_continue=6&v=xWq3v7DV7Zk&feature=emb_title",

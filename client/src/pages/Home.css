@@ -8,11 +8,12 @@
   width: 25px;
   right: 35px;
   cursor: pointer;
+  color: rgb(232, 54, 40);
 }
 
 .fixed-btm {
   position: fixed;
   right: 30;
-  bottom: 0;
+  bottom: 10px;
   z-index: 1030;
 }

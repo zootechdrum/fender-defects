@@ -5,6 +5,7 @@ import TableComp from "../components/Table";
 import Container from "../components/Container";
 import Search from "../components/SearchBox";
 import API from "./utils/API";
+import Zoom from "react-reveal/Zoom";
 import "./Home.css";
 
 import FenderLogo from "../images/Fender_logo.png";
@@ -89,11 +90,9 @@ function Home() {
           />
         </div>
       </Container>
-
-      <FontAwesomeIcon
-        class="fixed-btm fontIcon"
-        icon={faArrowAltCircleUp}
-      />
+      <Zoom>
+        <FontAwesomeIcon class="fixed-btm fontIcon" icon={faArrowAltCircleUp} />
+      </Zoom>
     </div>
   );
 }

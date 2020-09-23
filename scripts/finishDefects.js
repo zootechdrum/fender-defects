@@ -292,6 +292,86 @@ const finishDefects = [
         "https://www.premierguitar.com/articles/phasing-out-how-to-get-out-of-phase-sounds-from-a-stratocaster-1",
     },
   },
+  {
+    errorCode: 2310,
+    title: "Soft",
+    component: "Finish",
+    description:
+      "A soft finish is paint that has not thoroughly cured or dried. Note: Sometimes paint will take a few weeks to dry or can even remain permanently tacky. A soft finish will likely leave an impression on the surface with light pressure.",
+    media: {
+      videoUrl:
+        "https://www.youtube.com/watch?time_continue=6&v=xWq3v7DV7Zk&feature=emb_title",
+      blog:
+        "https://www.premierguitar.com/articles/phasing-out-how-to-get-out-of-phase-sounds-from-a-stratocaster-1",
+    },
+  },
+
+  // -----
+  {
+    errorCode: 2311,
+    title: "Imprint(s)",
+    component: "Finish",
+    description:
+      "Imprints are images left in the finish after coming into contact with an object. Finger prints, hardware impressions and impressions left by a case or gig bag are examples of this defect that is usually caused by insufficient cure time.",
+    media: {
+      videoUrl:
+        "https://www.youtube.com/watch?time_continue=6&v=xWq3v7DV7Zk&feature=emb_title",
+      blog:
+        "https://www.premierguitar.com/articles/phasing-out-how-to-get-out-of-phase-sounds-from-a-stratocaster-1",
+    },
+  },
+  {
+    errorCode: 2320,
+    title: "Delaminating",
+    component: "Finish",
+    description:
+      "Delaminating finish occurs when materials do not adhere to the surface beneath it and may also appear like a cloudy, opaque or peeling look. This is sometimes seen near wood and binding joints and where there are different adhesion points",
+    media: {
+      videoUrl:
+        "https://www.youtube.com/watch?time_continue=6&v=xWq3v7DV7Zk&feature=emb_title",
+      blog:
+        "https://www.premierguitar.com/articles/phasing-out-how-to-get-out-of-phase-sounds-from-a-stratocaster-1",
+    },
+  },
+  {
+    errorCode: 2340,
+    title: "Cosmetic Defect (Misc)",
+    component: "Finish",
+    description:
+      "A miscellaneous cosmetic defect is a minor defect not categorized by other defect codes. Note: Examples may include an odd or unattractive grain in a piece of wood or an overall distracting area that is not consistent with the rest of the surface being viewed.",
+    media: {
+      videoUrl:
+        "https://www.youtube.com/watch?time_continue=6&v=xWq3v7DV7Zk&feature=emb_title",
+      blog:
+        "https://www.premierguitar.com/articles/phasing-out-how-to-get-out-of-phase-sounds-from-a-stratocaster-1",
+    },
+  },
+  {
+    errorCode: 2310,
+    title: "Soft",
+    component: "Finish",
+    description:
+      "A soft finish is paint that has not thoroughly cured or dried. Note: Sometimes paint will take a few weeks to dry or can even remain permanently tacky. A soft finish will likely leave an impression on the surface with light pressure.",
+    media: {
+      videoUrl:
+        "https://www.youtube.com/watch?time_continue=6&v=xWq3v7DV7Zk&feature=emb_title",
+      blog:
+        "https://www.premierguitar.com/articles/phasing-out-how-to-get-out-of-phase-sounds-from-a-stratocaster-1",
+    },
+  },
+  {
+    errorCode: 2310,
+    title: "Soft",
+    component: "Finish",
+    description:
+      "A soft finish is paint that has not thoroughly cured or dried. Note: Sometimes paint will take a few weeks to dry or can even remain permanently tacky. A soft finish will likely leave an impression on the surface with light pressure.",
+    media: {
+      videoUrl:
+        "https://www.youtube.com/watch?time_continue=6&v=xWq3v7DV7Zk&feature=emb_title",
+      blog:
+        "https://www.premierguitar.com/articles/phasing-out-how-to-get-out-of-phase-sounds-from-a-stratocaster-1",
+    },
+  },
 ];
 
 module.exports = {

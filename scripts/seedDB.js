@@ -3,8 +3,16 @@ const db = require("../models");
 const { electronicDefects } = require("./electronicDefects");
 const { hardwareDefects } = require("./hardwareDefects");
 const { finishDefects } = require("./finishDefects");
+const { bodyDefects } = require("./bodyDefects");
+const { neckDefects } = require("./neckDefects");
+const { nutDefects } = require("./nutDefects");
 
-let defects = electronicDefects.concat(hardwareDefects).concat(finishDefects);
+let defects = electronicDefects
+  .concat(hardwareDefects)
+  .concat(finishDefects)
+  .concat(bodyDefects)
+  .concat(nutDefects)
+  .concat(neckDefects);
 
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/fenderDefects"

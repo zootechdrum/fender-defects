@@ -66,7 +66,7 @@ const electronicDefects = [
   },
   {
     errorCode: 2040,
-    title: "Component Polarity Erro",
+    title: "Component Polarity Error",
     component: "Electronics",
     description:
       "A polarity error is a reversal of the positive and negative wiring which usually results in an electronic buzzing sound, grounding issues or no sound at all. Note: The most common components that have this issue are the input jack, pickups and battery wiring when reversed.",

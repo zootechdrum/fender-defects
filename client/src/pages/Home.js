@@ -18,6 +18,7 @@ function Home() {
   const [searchField, setsearchField] = useState([]);
   //Filters by dropdown options
   const [filterComponent, setFilterComponent] = useState([]);
+  const [showScroll, setShowScroll] = useState(false);
 
   useEffect(() => {
     loadDefects();
@@ -28,6 +29,20 @@ function Home() {
       .then((res) => setDefects(res.data))
       .catch((err) => console.log(err));
   }
+
+  const checkScrollTop = () => {
+    if (!showScroll && window.pageYOffset > 400) {
+      setShowScroll(true);
+    } else if (showScroll && window.pageYOffset <= 400) {
+      setShowScroll(false);
+    }
+  };
+
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  window.addEventListener("scroll", checkScrollTop);
 
   const handleChange = (e) => {
     setFilterComponent([]);
@@ -90,9 +105,14 @@ function Home() {
           />
         </div>
       </Container>
-      <Zoom>
-        <FontAwesomeIcon class="fixed-btm fontIcon" icon={faArrowAltCircleUp} />
-      </Zoom>
+      <div>
+        <FontAwesomeIcon
+          className="fixed-btm fontIcon bounce"
+          onClick={scrollTop}
+          style={{ display: showScroll ? "flex " : "none" }}
+          icon={faArrowAltCircleUp}
+        />
+      </div>
     </div>
   );
 }

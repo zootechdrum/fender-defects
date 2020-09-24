@@ -6,8 +6,8 @@ import blogImg from "../../images/title.png";
 
 function TableComp(props) {
   return (
-    <div class="row">
-      <div class="col">
+    <div className="row">
+      <div className="col">
         <Table responsive striped bordered hover variant="dark">
           <thead>
             <tr>
@@ -22,7 +22,7 @@ function TableComp(props) {
           </thead>
           <tbody>
             {props.defects.map((defect) => (
-              <tr key={props.defects.id}>
+              <tr key={defect._id}>
                 <td>{defect.errorCode}</td>
                 <td>{defect.title}</td>
                 <td width="450">{defect.description}</td>

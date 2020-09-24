@@ -222,8 +222,8 @@ const bodyDefects = [
   },
   {
     errorCode:3080 ,
-    title: "Body",
-    component: "Bridge Thick/Thin",
+    title: "Bridge Thick/Thin",
+    component: "Body",
     description:
       "A bridge that is too thick or too thin when measured is considered out of specification. Note: It may create action, saddle and structural problems.",
     media: {

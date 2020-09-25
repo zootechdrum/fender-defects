@@ -1,14 +1,15 @@
 .input {
-  width: 400px;
-  padding: 14px 30px;
+  width: 35%;
+  padding: 14px 15px;
   border-radius: 50px;
   outline: none;
-  font-size: 18px;
+  font-size: 0.9rem;
 }
 .searchBox {
   text-align: center;
-  width: 1080px;
+  min-width: 100%;
   position: relative;
+  width: 100%;
 }
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -17,8 +18,9 @@
 }
 
 .close-btn {
-  left:620px;
-  top: 2px;
+  display: none;
+  right: 32.4%;
+  top: 4%;
   position: absolute;
   cursor: pointer;
   color: #ffffff;
@@ -32,24 +34,9 @@
   font-weight: bold;
 }
 
-/* @media only screen and (min-width: 600px) {
+@media only screen and (min-width: 968px) {
+  /* For desktop: */
   .close-btn {
-    left: 349px;
+    display: block;
   }
 }
-@media only screen and (min-width: 768px) {
-  .close-btn {
-    left: 439px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .close-btn {
-    left: 559px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .close-btn {
-    left: 593px;
-  }
-} */

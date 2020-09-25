@@ -5,7 +5,7 @@ function Search(props) {
   return (
     <div className="row">
       <div className="col">
-        <div className="searchBox mt-5">
+        <div className="searchBox text-center mt-5">
           <input
             onChange={props.change}
             type="text"

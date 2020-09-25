@@ -14,7 +14,7 @@
 
 .fixed-btm {
   position: fixed;
-  right: 30;
+  right: 3%;
   bottom: 10px;
   z-index: 1030;
 }
@@ -87,4 +87,8 @@
   60% {
     transform: translateY(-15px);
   }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
 }

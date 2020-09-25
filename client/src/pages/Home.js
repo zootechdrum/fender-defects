@@ -114,6 +114,14 @@ function Home() {
                       : filteredComponents
                   }
                 />
+                <div>
+                  <FontAwesomeIcon
+                    className="fixed-btm fontIcon bounce"
+                    onClick={scrollTop}
+                    style={{ display: showScroll ? "flex " : "none" }}
+                    icon={faArrowAltCircleUp}
+                  />
+                </div>
               </div>
             </div>
           </div>

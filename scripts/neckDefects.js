@@ -1,7 +1,7 @@
 const neckDefects = [
   {
     errorCode: 2350,
-    title: "Stripped Screw",
+    title: "Decal Issue",
     component: "Neck",
     description:
       "A decal issue is a problem with the logo or decal. Note: Examples include damage, misalignment, air bubbles, clarity, placement, correct logo, and raised or lifting.",

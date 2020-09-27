@@ -46,24 +46,23 @@ function TableComp(props) {
                           <Modal.Title>{defect.title}</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                          <img
-                            className="tableIcon"
-                            src={defect.image}
-                            alt="Youtube Icon"
-                          />
+                          <div className="text-center">
+                            <img
+                              className="def-image text-center"
+                              src={defect.image}
+                              alt="Youtube Icon"
+                            />
+                          </div>
                         </Modal.Body>
                         <Modal.Footer>
                           <Button variant="secondary" onClick={handleClose}>
                             Close
                           </Button>
-                          <Button variant="primary" onClick={handleClose}>
-                            Save Changes
-                          </Button>
                         </Modal.Footer>
                       </Modal>
                     </div>
                   ) : (
-                    <h2>hello</h2>
+                    ""
                   )}
                 </a>
               </div>

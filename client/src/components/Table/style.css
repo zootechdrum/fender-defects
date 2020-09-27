@@ -4,3 +4,8 @@
   position: relative;
   cursor: pointer;
 }
+
+.def-image {
+  height: 250px;
+  width: 250px;
+}

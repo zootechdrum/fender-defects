@@ -1,10 +1,10 @@
 import React from "react";
 import { Table } from "react-bootstrap";
 import "./style.css";
-import youTubeImg from "../../images/youtube.png";
-import blogImg from "../../images/img.png";
+import blogImg from "../../images/defectImg/2110.jpg";
 
 function TableComp(props) {
+  console.log(props.defects);
   return (
     <Table responsive striped bordered hover variant="dark">
       <thead>
@@ -29,7 +29,15 @@ function TableComp(props) {
             <td>
               <div className="d-flex align-items-center justify-content-around align-items-center">
                 <a href={defect.media.blogUrl}>
-                  <img className="tableIcon" src={blogImg} alt="Youtube Icon" />
+                  {defect.image ? (
+                    <img
+                      className="tableIcon"
+                      src={require("../../images/defectImg/2110.jpg")}
+                      alt="Youtube Icon"
+                    />
+                  ) : (
+                    <h2>hello</h2>
+                  )}
                 </a>
               </div>
             </td>

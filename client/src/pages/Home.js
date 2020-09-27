@@ -6,7 +6,8 @@ import Container from "../components/Container";
 import NavBar from "../components/NavBar/NavBar";
 import Search from "../components/SearchBox";
 import API from "./utils/API";
-import Zoom from "react-reveal/Zoom";
+import imgData from "./utils/imgArray";
+
 import "./Home.css";
 
 import FenderLogo from "../images/Fender_logo.png";
@@ -19,6 +20,8 @@ function Home() {
   const [searchField, setsearchField] = useState([]);
   //Filters by dropdown options
   const [filterComponent, setFilterComponent] = useState([]);
+
+  //Implements when arrow should show up
   const [showScroll, setShowScroll] = useState(false);
 
   useEffect(() => {
@@ -26,9 +29,19 @@ function Home() {
   }, []);
 
   function loadDefects() {
-    API.getDefects()
-      .then((res) => setDefects(res.data))
-      .catch((err) => console.log(err));
+    API.getDefects().then((res) => combineImgWithErrCode(res.data));
+    // .catch((err) => console.log(err));
+  }
+  function combineImgWithErrCode(arr) {
+    for (let j = 0; j < imgData.data.initData.length; j++) {
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i].errorCode === imgData.data.initData[j].defectCode) {
+          arr[i].image = imgData.data.initData[j].image;
+        }
+      }
+      console.log(arr);
+      setDefects(arr)
+    }
   }
 
   const checkScrollTop = () => {

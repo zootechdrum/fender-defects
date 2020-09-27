@@ -1,10 +1,14 @@
-import React from "react";
-import { Table } from "react-bootstrap";
+import React, { useState, useEffect } from "react";
+import { Table, Modal, Button } from "react-bootstrap";
 import "./style.css";
-import blogImg from "../../images/defectImg/2110.jpg";
+import picImg from "../../images/img.png";
 
 function TableComp(props) {
-  console.log(props.defects);
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <Table responsive striped bordered hover variant="dark">
       <thead>
@@ -30,11 +34,34 @@ function TableComp(props) {
               <div className="d-flex align-items-center justify-content-around align-items-center">
                 <a href={defect.media.blogUrl}>
                   {defect.image ? (
-                    <img
-                      className="tableIcon"
-                      src={require("../../images/defectImg/2110.jpg")}
-                      alt="Youtube Icon"
-                    />
+                    <div>
+                      <img
+                        onClick={handleShow}
+                        className="tableIcon"
+                        src={picImg}
+                        alt="Youtube Icon"
+                      />
+                      <Modal show={show} onHide={handleClose}>
+                        <Modal.Header closeButton>
+                          <Modal.Title>{defect.title}</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>
+                          <img
+                            className="tableIcon"
+                            src={defect.image}
+                            alt="Youtube Icon"
+                          />
+                        </Modal.Body>
+                        <Modal.Footer>
+                          <Button variant="secondary" onClick={handleClose}>
+                            Close
+                          </Button>
+                          <Button variant="primary" onClick={handleClose}>
+                            Save Changes
+                          </Button>
+                        </Modal.Footer>
+                      </Modal>
+                    </div>
                   ) : (
                     <h2>hello</h2>
                   )}

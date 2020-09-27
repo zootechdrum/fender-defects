@@ -2,7 +2,7 @@ import React from "react";
 import { Table } from "react-bootstrap";
 import "./style.css";
 import youTubeImg from "../../images/youtube.png";
-import blogImg from "../../images/title.png";
+import blogImg from "../../images/img.png";
 
 function TableComp(props) {
   return (
@@ -28,13 +28,6 @@ function TableComp(props) {
 
             <td>
               <div className="d-flex align-items-center justify-content-around align-items-center">
-                <a href={defect.media.videoUrl}>
-                  <img
-                    className="tableIcon"
-                    src={youTubeImg}
-                    alt="Youtube Icon"
-                  />
-                </a>
                 <a href={defect.media.blogUrl}>
                   <img className="tableIcon" src={blogImg} alt="Youtube Icon" />
                 </a>

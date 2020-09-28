@@ -33,14 +33,13 @@ function Home() {
     // .catch((err) => console.log(err));
   }
   function combineImgWithErrCode(arr) {
-    for (let j = 0; j < imgData.data.initData.length; j++) {
-      for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
+      for (let j = 0; j < imgData.data.initData.length; j++) {
         if (arr[i].errorCode === imgData.data.initData[j].defectCode) {
           arr[i].image = imgData.data.initData[j].image;
         }
       }
-      console.log(arr);
-      setDefects(arr)
+      setDefects(arr);
     }
   }
 

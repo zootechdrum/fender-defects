@@ -5,9 +5,19 @@ import picImg from "../../images/img.png";
 
 function TableComp(props) {
   const [show, setShow] = useState(false);
+  const [modalTitle, setmodalTitle] = useState("");
+  const [modalImg, setModalImg] = useState("");
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleClose = () => {
+    setShow(false);
+  };
+  const handleShow = (e) => {
+    console.log(e.target.getAttribute("data-image"));
+    setmodalTitle(e.target.getAttribute("data-title"));
+    setModalImg(e.target.getAttribute("data-image"));
+
+    setShow(true);
+  };
 
   return (
     <Table responsive striped bordered hover variant="dark">
@@ -37,19 +47,21 @@ function TableComp(props) {
                     <div>
                       <img
                         onClick={handleShow}
+                        data-title={defect.title}
+                        data-image={defect.image}
                         className="tableIcon"
                         src={picImg}
                         alt="Youtube Icon"
                       />
                       <Modal show={show} onHide={handleClose}>
                         <Modal.Header closeButton>
-                          <Modal.Title>{defect.title}</Modal.Title>
+                          <Modal.Title>{modalTitle}</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
                           <div className="text-center">
                             <img
                               className="def-image text-center"
-                              src={defect.image}
+                              src={modalImg}
                               alt="Youtube Icon"
                             />
                           </div>

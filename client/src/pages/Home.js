@@ -114,7 +114,6 @@ function Home() {
                     <Dropdown.Item eventKey="Hardware">Hardware</Dropdown.Item>
                     <Dropdown.Item eventKey="Neck">Neck</Dropdown.Item>
                     <Dropdown.Item eventKey="Nut">Nut</Dropdown.Item>
-                    <Dropdown.Item eventKey="Acoustic">Acoustic</Dropdown.Item>
                   </DropdownButton>
                 </div>
               </div>

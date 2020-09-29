@@ -71,19 +71,19 @@ const imgData = {
       },
       {
         defectCode: 2173,
-        image: require("../../images/defectImg/2172.jpg"),
+        image: require("../../images/defectImg/2173.jpg"),
       },
       {
         defectCode: 2180,
-        image: require("../../images/defectImg/2172.jpg"),
+        image: require("../../images/defectImg/2180.jpg"),
       },
       {
         defectCode: 2190,
-        image: require("../../images/defectImg/2172.jpg"),
+        image: require("../../images/defectImg/2190.jpg"),
       },
       {
         defectCode: 2195,
-        image: require("../../images/defectImg/2172.jpg"),
+        image: require("../../images/defectImg/2195.jpg"),
       },
     ],
   },

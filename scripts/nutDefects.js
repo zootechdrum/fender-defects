@@ -40,7 +40,7 @@ const nutDefects = [
   },
   {
     errorCode: 2451,
-    title: "Shelf High/Low (2451)",
+    title: "Shelf High/Low",
     component: "Nut",
     description:
       "When the shelf is machined too high or low, the nut cannot be cut within specification. Note: The result of the shelf being too high or low is too deep or too shallow string slots.",

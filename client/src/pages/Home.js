@@ -82,9 +82,7 @@ function Home() {
   return (
     <div>
       <div className="text-center">
-        <div>
-          <NavBar />
-        </div>
+        <div></div>
         <Hero>
           <img src={FenderLogo} alt="Fender Logo" />
         </Hero>

@@ -15,7 +15,7 @@ const hardwareDefects = [
   // --------
   {
     errorCode: 2111,
-    title: "Incorrectly Parts",
+    title: "Incorrect Parts",
     component: "Hardware",
     description:
       "Incorrect parts are parts that were not intended for use on a particular instrument.",

@@ -20,14 +20,14 @@
 .close-btn {
   display: none;
   right: 32.4%;
-  top: 4%;
+  top: 3.5%;
   position: absolute;
   cursor: pointer;
   color: #ffffff;
   background: #000000;
   border: 0px;
   width: 120px;
-  height: calc(100% - 4px);
+  height: calc(100% - 3px);
   border-radius: 50px;
   outline: none;
   text-transform: uppercase;

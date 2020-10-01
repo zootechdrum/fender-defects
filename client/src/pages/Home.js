@@ -81,7 +81,7 @@ function Home() {
   );
   return (
     <div>
-      <div className="text-center">git 
+      <div className="text-center">
         <Hero>
           <img src={FenderLogo} alt="Fender Logo" />
         </Hero>

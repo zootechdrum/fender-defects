@@ -53,25 +53,6 @@ function TableComp(props) {
                         src={picImg}
                         alt="Youtube Icon"
                       />
-                      <Modal show={show} onHide={handleClose}>
-                        <Modal.Header closeButton>
-                          <Modal.Title>{modalTitle}</Modal.Title>
-                        </Modal.Header>
-                        <Modal.Body>
-                          <div className="text-center">
-                            <img
-                              className="def-image text-center"
-                              src={modalImg}
-                              alt="Youtube Icon"
-                            />
-                          </div>
-                        </Modal.Body>
-                        <Modal.Footer>
-                          <Button variant="secondary" onClick={handleClose}>
-                            Close
-                          </Button>
-                        </Modal.Footer>
-                      </Modal>
                     </div>
                   ) : (
                     ""
@@ -82,6 +63,25 @@ function TableComp(props) {
           </tr>
         ))}
       </tbody>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>{modalTitle}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className="text-center">
+            <img
+              className="def-image text-center"
+              src={modalImg}
+              alt="Youtube Icon"
+            />
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </Table>
   );
 }

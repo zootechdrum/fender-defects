@@ -72,7 +72,7 @@ function TableComp(props) {
             <img
               className="def-image text-center"
               src={modalImg}
-              alt="Youtube Icon"
+              alt="Defect image"
             />
           </div>
         </Modal.Body>
